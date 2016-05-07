@@ -17,7 +17,7 @@ class FoundationRoleSeeder extends Seeder
             ['title' => '班主任', 'mark' => '班级管理员，对班级内数据有操作权限'],
             ['title' => '教师','mark' => '普通教师，对科目有操作权限'],
             ['title' => '学生','mark' => '学生，仅浏览权限'],
-            ['titile' => '学生家长','mark' => '对指定学生的内容，有浏览权限'],
+            ['title' => '学生家长','mark' => '对指定学生的内容，有浏览权限'],
         ];
         foreach ($roles as $role) {
             \App\Models\Foundation\Role::create($role);
