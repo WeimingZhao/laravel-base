@@ -11,7 +11,6 @@
 |
 */
 
-
 Route::group(['namespace' => 'File'], function () {
     Route::any('image/{name}/{size?}', ['uses' => 'ImageController@server', 'as' => 'file.image.server']);//图片服务器
     Route::group(['prefix' => 'upload', 'middleware' => ['file']], function () {
@@ -99,3 +98,12 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['adm
 
 
 });
+
+
+Route::get('/', function () {
+    return view('school.index');
+});
+
+
+Route::get('/news/index', ['uses' => 'NewsController@index', 'as' => 'news.index']);
+Route::get('/news/detail', ['uses' => 'NewsController@detail', 'as' => 'news.detail']);

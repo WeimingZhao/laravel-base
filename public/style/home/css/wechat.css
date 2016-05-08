@@ -1,0 +1,28 @@
+.main-header .sidebar-refresh {
+  float: right;
+  color: #fff;
+  background-color: transparent;
+  background-image: none;
+  padding: 15px 15px;
+  font-family: fontAwesome;
+
+}
+.main-header .sidebar-refresh:before {
+  content: "\f021";
+  color: #fff;
+
+}
+.main-header .sidebar-refresh:hover {
+  color: #fff;
+  background: #367FA9;
+}
+.main-header .sidebar-refresh:focus,
+.main-header .sidebar-refresh:active {
+  background: transparent;
+  color: #fff;
+
+}
+.main-header .sidebar-refresh .icon-bar {
+  display: none;
+
+}

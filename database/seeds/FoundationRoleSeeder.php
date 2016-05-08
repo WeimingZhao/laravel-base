@@ -13,11 +13,10 @@ class FoundationRoleSeeder extends Seeder
     {
         $roles = [
             ['title' => '超级管理员', 'mark' => '超级管理员,具有全部系统权限,不能删除,请勿随意授权'],
-            ['title' => '校区管理员', 'mark' => '校级管理员，对学校内数据有操作权限'],
-            ['title' => '班主任', 'mark' => '班级管理员，对班级内数据有操作权限'],
-            ['title' => '教师','mark' => '普通教师，对科目有操作权限'],
-            ['title' => '学生','mark' => '学生，仅浏览权限'],
-            ['titile' => '学生家长','mark' => '对指定学生的内容，有浏览权限'],
+            ['title' => '用户管理员', 'mark' => '用户管理员,负责管理系统的用户'],
+            ['title' => '系统管理员', 'mark' => '管理系统'],
+            ['title' => '总编辑'],
+            ['title' => '编辑']
         ];
         foreach ($roles as $role) {
             \App\Models\Foundation\Role::create($role);
