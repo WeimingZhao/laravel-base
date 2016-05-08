@@ -107,3 +107,6 @@ Route::get('/', function () {
 
 Route::get('/news/index', ['uses' => 'NewsController@index', 'as' => 'news.index']);
 Route::get('/news/detail', ['uses' => 'NewsController@detail', 'as' => 'news.detail']);
+
+Route::get('/excel/export', ['uses' => 'ExcelController@export', 'as' => 'excel.export']);
+Route::get('/excel/import', ['uses' => 'ExcelController@import', 'as' => 'excel.import']);
