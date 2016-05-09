@@ -99,7 +99,7 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['adm
 
 });
 
-Route::any('/wechat', 'Wechat/IndexController@serve');
+Route::any('/wechat', 'Wechat\IndexController@serve');
 Route::get('/wechat/index/{token}/{timestamp}/{nonce}/', ['uses' => 'WeChat\IndexController@index', 'as' => 'wechat.index.index']);
 
 

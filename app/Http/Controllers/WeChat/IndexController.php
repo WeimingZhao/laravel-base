@@ -20,9 +20,8 @@ class IndexController extends Controller
 
 	public function serve()
 	{
-
-		$response = $Wechat->server->serve();
-		echo $response;
+		$wechat = app('wechat');
+		return $wechat->server->serve();
 	}
 
 
