@@ -51,7 +51,7 @@ class FoundationAccessSeeder extends Seeder
             ['pid' => 29, 'name' => 'foundation.i.password', 'title' => '修改个人密码', 'display' => 0, 'acl' => 0, 'level' => 2, 'image' => 'key', 'mark' => '修改我的个人密码'],
             ['pid' => 29, 'name' => 'foundation.i.map', 'title' => '功能地图', 'display' => 0, 'acl' => 0, 'level' => 2, 'image' => 'key', 'mark' => '我的功能地图'],
 //checked at 160506 15：09
-            ['pid' => 1, 'name' => 'foundation.news.index', 'title' => '消息管理', 'display' => 1, 'level' => 1, 'image' => 'cog', 'mark' => '消息列表'], //32
+/*          ['pid' => 1, 'name' => 'foundation.news.index', 'title' => '消息管理', 'display' => 1, 'level' => 1, 'image' => 'cog', 'mark' => '消息列表'], //32
             ['pid' => 32, 'name' => 'foundation.news.create', 'title' => '发布消息', 'display' => 1, 'level' => 2, 'image' => 'plus', 'mark' => '发布消息'],
             ['pid' => 32, 'name' => 'foundation.news.update', 'title' => '修改消息', 'display' => 0, 'level' => 2, 'image' => 'edit', 'mark' => '修改消息'],
             ['pid' => 32, 'name' => 'foundation.news.detail', 'title' => '浏览消息', 'display' => 0, 'level' => 2, 'image' => 'edit', 'mark' => '浏览消息'],
@@ -92,7 +92,7 @@ class FoundationAccessSeeder extends Seeder
             ['pid' => 62, 'name' => 'foundation.profile.import', 'title' => '导入简介', 'display' => 1, 'level' => 2, 'image' => 'plus', 'mark' => '发布简介'],            
             ['pid' => 62, 'name' => 'foundation.profile.update', 'title' => '修改简介', 'display' => 0, 'level' => 2, 'image' => 'edit', 'mark' => '修改简介'],
             ['pid' => 62, 'name' => 'foundation.profile.delete', 'title' => '删除简介', 'display' => 0, 'level' => 2, 'image' => 'edit', 'mark' => '删除简介'],
-
+*/
         ];
         foreach ($datas as $data) {
             \App\Models\Foundation\Access::create($data);
