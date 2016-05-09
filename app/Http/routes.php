@@ -99,10 +99,8 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['adm
 
 });
 
-
-Route::get('/', function () {
-    return view('school.index');
-});
+Route::any('/wechat', 'Wechat/IndexController@serve');
+Route::get('/wechat/index/{token}/{timestamp}/{nonce}/', ['uses' => 'WeChat\IndexController@index', 'as' => 'wechat.index.index']);
 
 
 Route::get('/news/index', ['uses' => 'NewsController@index', 'as' => 'news.index']);
@@ -110,3 +108,5 @@ Route::get('/news/detail', ['uses' => 'NewsController@detail', 'as' => 'news.det
 
 Route::get('/excel/export', ['uses' => 'ExcelController@export', 'as' => 'excel.export']);
 Route::get('/excel/import', ['uses' => 'ExcelController@import', 'as' => 'excel.import']);
+
+Route::get('/user/create',['uses'=>'UserController@create', 'as' => 'user.create']);

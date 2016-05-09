@@ -8,6 +8,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use Excel;
+use DB;
 
 class ExcelController extends Controller
 {
@@ -33,7 +34,28 @@ public function import(){
     $filePath = 'storage/ExcelFile/'.iconv('utf-8', 'gbk//IGNORE', 'test01').'.xls';
     Excel::load($filePath, function($reader) {
         $data = $reader->all()->toArray();
-        print_r($data[4]);
+
+ /*               DB::table('users')->insert([
+            ['user_code'=>'101201801002','realname'=>'张1','student_id' => '2018102'],
+            ['user_code'=>'101201801003','realname'=>'张2','student_id' => '2018103'],
+            ['user_code'=>'101201801004','realname'=>'张3','student_id' => '2018104'],
+        ]);
+*/
+        $batch = time();
+        foreach($data as $key => $value)
+        {
+            unset($data[$key]['school']);
+            unset($data[$key]['grade']);
+            unset($data[$key]['class']);
+            unset($data[$key]['order']);
+            $data[$key]['batch'] = $batch;
+        }
+        foreach($data as $key => $value)
+        {
+            if($key < 4)
+                unset($data[$key]);
+        }
+        DB::table('users')->insert($data);
     });
 }
 
