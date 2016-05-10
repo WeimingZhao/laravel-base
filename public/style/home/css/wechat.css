@@ -1,3 +1,8 @@
+
+.main-header {
+  background-color: #524945;
+}
+
 .main-header .sidebar-refresh {
   float: right;
   color: #fff;
@@ -12,17 +17,328 @@
   color: #fff;
 
 }
-.main-header .sidebar-refresh:hover {
+.main-header .sidebar-refresh:hover,.sidebar-toggle:hover  {
   color: #fff;
-  background: #367FA9;
+  background: #535046;
 }
 .main-header .sidebar-refresh:focus,
-.main-header .sidebar-refresh:active {
+.main-header .sidebar-refresh:active,
+.main-header .sidebar-toggle:focus,
+.main-header .sidebar-toggle:active {
   background: transparent;
   color: #fff;
 
 }
-.main-header .sidebar-refresh .icon-bar {
+.main-header .sidebar-refresh .icon-bar,
+.main-header .sidebar-toggle .icon-bar  {
   display: none;
 
 }
+.main-header .sidebar-toggle {
+  float: left;
+  color: #fff;
+  background-color: transparent;
+  background-image: none;
+  padding: 15px 15px;
+  font-family: fontAwesome;
+
+}
+.main-header .sidebar-toggle:before {
+  content: "\f00b";
+  color: #fff;
+
+}
+
+/*
+common.css
+*/
+html,body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,fieldset,input,abbr,article,aside,command,details,figcaption,figure,footer,header,hgroup,mark,meter,nav,output,progress,section,summary,time {margin: 0; padding: 0; }
+ul,li{list-style: none}
+body{
+    background-color: #EAEBEC;
+    padding-bottom: 70px;
+}
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.i-box{
+    width: 100%;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    padding: 20px 15px;
+    margin-top: 25px;
+    border: 1px solid #E5E6E7;
+}
+
+.i-box h3{
+    color: #222425;
+}
+.i-box img{
+    width: 100%;
+    height: 150px;
+}
+.i-box p{
+    color: #9B9C9D;
+    line-height: 1.1em;
+    margin-top: 10px;
+}
+.i-box .date{
+    color: #9B9C9D;
+    margin:10px 0;
+}
+
+/*
+ * 底部导航栏
+ */
+
+.refresh{
+  content: "\f021";
+}
+
+.content-padding{
+    background-color: #524945;
+    height: 50px;
+    width: 100%;
+}
+
+.main-header{
+    background-color: #524945;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    up: 0;
+    left: 0;
+    display: inline-block;
+    z-index: 2001;
+}
+
+
+.bottom-bar{
+    background-color: #524945;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    z-index: 2001;
+}
+.bottom-bar a{
+    display: block;
+    float: left;
+    width: 20%;
+    height: 50px;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+}
+.bottom-bar a i{
+    padding-top: 10px;
+    line-height: 20px;
+    font-size: 1.2em;
+}
+.bottom-bar a p{
+    font-size: 0.7em;
+}
+@media screen and (min-width: 700px){
+    .container {
+        width: 700px;
+        margin: auto;
+    }
+}
+
+.footer{
+    padding-top: 20px;
+    text-align: center;
+    color: #737373;
+    font-size: 0.9em;
+}
+
+#msearch{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    bottom: 50px;
+    left: 0;
+    display: none;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    background: #ffffff;
+    /*background: #e2e2e2;*/
+    z-index: 2001;
+}
+#msearch input[type='text']{
+    width: 100%;
+    height: 30px;
+    font-size: 1em;
+    border: 1px solid #DFDFDF;
+}
+#msearch button[type='submit']{
+    display: block;
+    position: relative;
+    top: -33px;
+    left: -30px;
+    margin-left: 100%;
+    width: 30px;
+    height: 30px;
+    font-size: 1.4em;
+    line-height: 30px;
+    text-align: center;
+    color: #BFBFBF;
+    background: transparent;
+    border: none;
+}
+
+/*
+
+11111111111111111111111111
+
+*/
+
+#mcover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    z-index: 20000;
+}
+#mcover img {
+    position: fixed;
+    right: 18px;
+    top: 5px;
+    width: 260px!important;
+    height: 180px!important;
+    z-index: 20001;
+}
+.text {
+    margin: 15px 0;
+    font-size: 14px;
+    word-wrap: break-word;
+    color: #727272;
+}
+#mess_share {
+    margin: 15px 0;
+    display: block;
+}
+#share_1 {
+    float: left;
+    width: 49%;
+    display: block;
+}
+#share_2 {
+    float: right;
+    width: 49%;
+    display: block;
+}
+.clr {
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+}
+.button2 {
+    font-size: 16px;
+    padding: 8px 0;
+    border: 1px solid #adadab;
+    color: #000000;
+    background-color: #e8e8e8;
+    background-image: linear-gradient(to top, #dbdbdb, #f4f4f4);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.45), inset 0 1px 1px #efefef;
+    text-shadow: 0.5px 0.5px 1px #fff;
+    text-align: center;
+    border-radius: 3px;
+    width: 100%;
+}
+#mess_share img {
+    width: 22px!important;
+    height: 22px!important;
+    vertical-align: top;
+    border: 0;
+}
+
+
+/******************************鍔ㄧ敾*************************/
+#iframe_screen{
+    background:#fff;
+    position:absolute;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    z-index:300000;
+    overflow:hidden;
+}
+
+/*
+
+list
+
+*/
+
+       table,tr,td{
+            padding: 0;
+            margin: 0;
+            border: none;
+        }
+        .doc-box {
+            width: 100%;
+            height: 64px;
+            background: #ffffff;
+            margin-top: 10px;
+            box-sizing: border-box;
+        }
+
+        .doc-box img {
+            width: 75px;
+            height: 60px;
+        }
+
+        .doc-box .doc-info {
+            box-sizing: border-box;
+            padding: 5px 10px;
+        }
+
+        .doc-box .doc-info .doc-title {
+            height: 20px;
+            line-height: 20px;
+            font-weight: bold;
+            overflow: hidden;
+            font-size: 0.8em;
+            color: #0A0A0C;
+        }
+        .doc-box .doc-info .doc-description{
+            height: 40px;
+            line-height: 20px;
+            font-size: 0.7em;
+            overflow: hidden;
+            color: #A0A1A2;
+        }
+        @media  screen and (min-width: 370px){
+            .doc-box{
+                height: 84px;
+            }
+            .doc-box img{
+                width: 100px;
+                height: 80px;
+            }
+            .doc-box .doc-info .doc-title{
+                height: 30px;
+                line-height: 30px;
+                font-size: 1em;;
+            }
+            .doc-box .doc-info .doc-description{
+                height: 50px;
+                line-height: 25px;
+                font-size: 0.9em;
+            }
+        }
