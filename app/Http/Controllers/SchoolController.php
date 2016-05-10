@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\School;
+namespace App\Http\Controllers;
 
 use App\Services\Foundation\Log\Log;
 use Illuminate\Http\Request;

@@ -110,3 +110,4 @@ Route::get('/excel/export', ['uses' => 'ExcelController@export', 'as' => 'excel.
 Route::get('/excel/import', ['uses' => 'ExcelController@import', 'as' => 'excel.import']);
 
 Route::get('/user/create',['uses'=>'UserController@create', 'as' => 'user.create']);
+Route::any('/', 'SchoolController@index');
