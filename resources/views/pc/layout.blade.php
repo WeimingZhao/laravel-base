@@ -43,8 +43,8 @@
 <!-- Site wrapper -->
 <div class="wrapper">
 
-    @include('admin.header')
-    @include('admin.sidebar')
+    @include('pc.header')
+    @include('pc.sidebar')
 
             <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">

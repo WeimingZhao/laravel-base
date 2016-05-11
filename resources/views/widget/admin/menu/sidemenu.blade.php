@@ -3,11 +3,6 @@
     <?php 
 
 
-    for($i = 30; $i < 70 ;$i++)
-    {
-        unset($list[1]['son'][$i]);
-    }
-    
 
    ?>
 //    print_r($list);

@@ -94,6 +94,76 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['adm
             Route::any('login', ['uses' => 'LogController@login', 'as' => 'login']);//用户登录日志
         });
 
+        Route::group(['prefix' => 'news', 'as' => 'news.'], function () {
+            Route::any('/', ['uses' => 'NewsController@index', 'as' => 'index']);
+            Route::any('create', ['uses' => 'NewsController@create', 'as' => 'create']);
+            Route::any('update', ['uses' => 'NewsController@update', 'as' => 'update']);
+            Route::any('delete', ['uses' => 'NewsController@delete', 'as' => 'delete']);
+            Route::any('detail', ['uses' => 'NewsController@detail', 'as' => 'detail']);
+        });
+
+        Route::group(['prefix' => 'apply', 'as' => 'apply.'], function () {
+            Route::any('/', ['uses' => 'ApplyController@index', 'as' => 'index']);
+            Route::any('create', ['uses' => 'ApplyController@create', 'as' => 'create']);
+            Route::any('update', ['uses' => 'ApplyController@update', 'as' => 'update']);
+ //实际无delete 功能
+            Route::any('delete', ['uses' => 'ApplyController@delete', 'as' => 'delete']);
+            Route::any('detail', ['uses' => 'ApplyController@detail', 'as' => 'detail']);
+        });
+
+        Route::group(['prefix' => 'score', 'as' => 'score.'], function () {
+            Route::any('/', ['uses' => 'ScoreController@index', 'as' => 'index']);
+            Route::any('import', ['uses' => 'ImportController@import', 'as' => 'import']);
+//            Route::any('update', ['uses' => 'ScoreController@update', 'as' => 'update']);
+            Route::any('delete', ['uses' => 'ScoreController@delete', 'as' => 'delete']);
+            Route::any('detail', ['uses' => 'ScoreController@detail', 'as' => 'detail']);
+        });
+
+        Route::group(['prefix' => 'homework', 'as' => 'homework.'], function () {
+            Route::any('/', ['uses' => 'HomeworkController@index', 'as' => 'index']);
+            Route::any('create', ['uses' => 'HomeworkController@create', 'as' => 'create']);
+            Route::any('update', ['uses' => 'HomeworkController@update', 'as' => 'update']);
+            Route::any('delete', ['uses' => 'HomeworkController@delete', 'as' => 'delete']);
+            Route::any('detail', ['uses' => 'HomeworkController@detail', 'as' => 'detail']);
+        });
+
+        Route::group(['prefix' => 'zone', 'as' => 'zone.'], function () {
+            Route::any('/', ['uses' => 'ZoneController@index', 'as' => 'index']);
+            Route::any('create', ['uses' => 'ZoneController@create', 'as' => 'create']);
+//            Route::any('update', ['uses' => 'ZoneController@update', 'as' => 'update']);
+            Route::any('delete', ['uses' => 'ZoneController@delete', 'as' => 'delete']);
+            Route::any('detail', ['uses' => 'ZoneController@detail', 'as' => 'detail']);
+        });
+
+        Route::group(['prefix' => 'message', 'as' => 'message.'], function () {
+            Route::any('/', ['uses' => 'MessageController@index', 'as' => 'index']);
+            Route::any('import', ['uses' => 'MessageController@import', 'as' => 'import']);
+            Route::any('create', ['uses' => 'MessageController@create', 'as' => 'create']);
+            Route::any('update', ['uses' => 'MessageController@update', 'as' => 'update']);
+            Route::any('delete', ['uses' => 'MessageController@delete', 'as' => 'delete']);
+            Route::any('detail', ['uses' => 'MessageController@detail', 'as' => 'detail']);
+        });
+
+        Route::group(['prefix' => 'performance', 'as' => 'performance.'], function () {
+            Route::any('/', ['uses' => 'PerformanceController@index', 'as' => 'index']);
+            Route::any('create', ['uses' => 'PerformanceController@create', 'as' => 'create']);
+            Route::any('update', ['uses' => 'PerformanceController@update', 'as' => 'update']);
+            Route::any('delete', ['uses' => 'PerformanceController@delete', 'as' => 'delete']);
+            Route::any('detail', ['uses' => 'PerformanceController@detail', 'as' => 'detail']);
+        });
+
+        Route::group(['prefix' => 'profile', 'as' => 'profile.'], function () {
+            Route::any('/', ['uses' => 'ProfileController@index', 'as' => 'index']);
+            Route::any('import', ['uses' => 'ProfileController@import', 'as' => 'import']);
+//            Route::any('create', ['uses' => 'ProfileController@create', 'as' => 'create']);
+            Route::any('update', ['uses' => 'ProfileController@update', 'as' => 'update']);
+            Route::any('delete', ['uses' => 'ProfileController@delete', 'as' => 'delete']);
+            Route::any('detail', ['uses' => 'ProfileController@detail', 'as' => 'detail']);
+        });
+
+
+
+
     });
 
 
