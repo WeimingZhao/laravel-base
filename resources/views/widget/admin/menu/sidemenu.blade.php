@@ -1,5 +1,17 @@
 <ul class="sidebar-menu">
     <li class="header">MAIN NAVIGATION</li>
+    <?php 
+
+
+    for($i = 30; $i < 70 ;$i++)
+    {
+        unset($list[1]['son'][$i]);
+    }
+    
+
+   ?>
+//    print_r($list);
+
     @foreach($list as $item)
         @if($item['display']==1)
             <li class="treeview @if($first_node['name']==$item['name']) active @endif">
@@ -24,3 +36,7 @@
         @endif
     @endforeach
 </ul>
+
+ 
+
+

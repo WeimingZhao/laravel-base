@@ -103,6 +103,7 @@ Route::any('/wechat', 'Wechat\IndexController@serve');
 Route::get('/wechat/index/{token}/{timestamp}/{nonce}/', ['uses' => 'WeChat\IndexController@index', 'as' => 'wechat.index.index']);
 
 
+Route::any('/news/create', ['uses' => 'SchoolController@create', 'as' => 'school.create']);
 Route::get('/news/index', ['uses' => 'NewsController@index', 'as' => 'news.index']);
 Route::get('/news/detail', ['uses' => 'NewsController@detail', 'as' => 'news.detail']);
 
@@ -110,4 +111,4 @@ Route::get('/excel/export', ['uses' => 'ExcelController@export', 'as' => 'excel.
 Route::get('/excel/import', ['uses' => 'ExcelController@import', 'as' => 'excel.import']);
 
 Route::get('/user/create',['uses'=>'UserController@create', 'as' => 'user.create']);
-Route::any('/', 'SchoolController@index');
+Route::any('/', ['uses' => 'SchoolController@index', 'as' => 'school.list']);
