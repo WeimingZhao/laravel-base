@@ -68,32 +68,32 @@ class FoundationAccessSeeder extends Seeder
             ['pid' => 41, 'name' => 'foundation.score.delete', 'title' => '删除成绩', 'display' => 0, 'level' => 2, 'image' => 'edit', 'mark' => '删除成绩'],
 
             ['pid' => 1, 'name' => 'foundation.homework.index', 'title' => '作业管理', 'display' => 1, 'level' => 1, 'image' => 'cog', 'mark' => '消息列表'], //45
-            ['pid' => 44, 'name' => 'foundation.homework.create', 'title' => '发布作业', 'display' => 1, 'level' => 2, 'image' => 'plus', 'mark' => '发布作业'],
-            ['pid' => 44, 'name' => 'foundation.homework.update', 'title' => '修改作业', 'display' => 0, 'level' => 2, 'image' => 'edit', 'mark' => '修改作业'],            
-            ['pid' => 44, 'name' => 'foundation.homework.detail', 'title' => '作业明细', 'display' => 1, 'level' => 2, 'image' => 'plus', 'mark' => '作业明细'],
-            ['pid' => 44, 'name' => 'foundation.homework.delete', 'title' => '删除作业', 'display' => 0, 'level' => 2, 'image' => 'edit', 'mark' => '删除作业'],
+            ['pid' => 45, 'name' => 'foundation.homework.create', 'title' => '发布作业', 'display' => 1, 'level' => 2, 'image' => 'plus', 'mark' => '发布作业'],
+            ['pid' => 45, 'name' => 'foundation.homework.update', 'title' => '修改作业', 'display' => 0, 'level' => 2, 'image' => 'edit', 'mark' => '修改作业'],            
+            ['pid' => 45, 'name' => 'foundation.homework.detail', 'title' => '作业明细', 'display' => 1, 'level' => 2, 'image' => 'plus', 'mark' => '作业明细'],
+            ['pid' => 45, 'name' => 'foundation.homework.delete', 'title' => '删除作业', 'display' => 0, 'level' => 2, 'image' => 'edit', 'mark' => '删除作业'],
 
             ['pid' => 1, 'name' => 'foundation.zone.index', 'title' => '社区留言列表', 'display' => 1, 'level' => 1, 'image' => 'cog', 'mark' => '社区留言列表'], //50 
-            ['pid' => 49, 'name' => 'foundation.zone.create', 'title' => '发起留言', 'display' => 1, 'level' => 2, 'image' => 'plus', 'mark' => '发起社区留言'],             
-            ['pid' => 49, 'name' => 'foundation.zone.detail', 'title' => '社区留言详情', 'display' => 1, 'level' => 2, 'image' => 'plus', 'mark' => '社区留言明细'],
-            ['pid' => 49, 'name' => 'foundation.zone.delete', 'title' => '删除留言', 'display' => 0, 'level' => 2, 'image' => 'edit', 'mark' => '删除留言'],
+            ['pid' => 50, 'name' => 'foundation.zone.create', 'title' => '发起留言', 'display' => 1, 'level' => 2, 'image' => 'plus', 'mark' => '发起社区留言'],             
+            ['pid' => 50, 'name' => 'foundation.zone.detail', 'title' => '社区留言详情', 'display' => 1, 'level' => 2, 'image' => 'plus', 'mark' => '社区留言明细'],
+            ['pid' => 50, 'name' => 'foundation.zone.delete', 'title' => '删除留言', 'display' => 0, 'level' => 2, 'image' => 'edit', 'mark' => '删除留言'],
 
             ['pid' => 1, 'name' => 'foundation.message.index', 'title' => '通知管理', 'display' => 1, 'level' => 1, 'image' => 'cog', 'mark' => '通知列表'], //54
-            ['pid' => 53, 'name' => 'foundation.message.import', 'title' => '发布通知', 'display' => 1, 'level' => 2, 'image' => 'plus', 'mark' => '发布通知'],            
-            ['pid' => 53, 'name' => 'foundation.message.detail', 'title' => '通知详情', 'display' => 1, 'level' => 2, 'image' => 'plus', 'mark' => '通知详情'],
-            ['pid' => 53, 'name' => 'foundation.message.update', 'title' => '修改通知', 'display' => 0, 'level' => 2, 'image' => 'edit', 'mark' => '修改通知'],
-            ['pid' => 53, 'name' => 'foundation.message.delete', 'title' => '删除通知', 'display' => 0, 'level' => 2, 'image' => 'edit', 'mark' => '删除通知'],
+            ['pid' => 54, 'name' => 'foundation.message.import', 'title' => '发布通知', 'display' => 1, 'level' => 2, 'image' => 'plus', 'mark' => '发布通知'],            
+            ['pid' => 54, 'name' => 'foundation.message.detail', 'title' => '通知详情', 'display' => 1, 'level' => 2, 'image' => 'plus', 'mark' => '通知详情'],
+            ['pid' => 54, 'name' => 'foundation.message.update', 'title' => '修改通知', 'display' => 0, 'level' => 2, 'image' => 'edit', 'mark' => '修改通知'],
+            ['pid' => 54, 'name' => 'foundation.message.delete', 'title' => '删除通知', 'display' => 0, 'level' => 2, 'image' => 'edit', 'mark' => '删除通知'],
 
             ['pid' => 1, 'name' => 'foundation.performance.index', 'title' => '表现管理', 'display' => 1, 'level' => 1, 'image' => 'cog', 'mark' => '表现列表'], //59
-            ['pid' => 58, 'name' => 'foundation.performance.import', 'title' => '导入表现', 'display' => 1, 'level' => 2, 'image' => 'plus', 'mark' => '导入表现'],            
-            ['pid' => 58, 'name' => 'foundation.performance.detail', 'title' => '表现内容', 'display' => 1, 'level' => 2, 'image' => 'plus', 'mark' => '表现内容'],
-            ['pid' => 58, 'name' => 'foundation.performance.delete', 'title' => '删除表现', 'display' => 0, 'level' => 2, 'image' => 'edit', 'mark' => '删除表现'],
+            ['pid' => 59, 'name' => 'foundation.performance.import', 'title' => '导入表现', 'display' => 1, 'level' => 2, 'image' => 'plus', 'mark' => '导入表现'],            
+            ['pid' => 59, 'name' => 'foundation.performance.detail', 'title' => '表现内容', 'display' => 1, 'level' => 2, 'image' => 'plus', 'mark' => '表现内容'],
+            ['pid' => 59, 'name' => 'foundation.performance.delete', 'title' => '删除表现', 'display' => 0, 'level' => 2, 'image' => 'edit', 'mark' => '删除表现'],
 
             ['pid' => 1, 'name' => 'foundation.profile.index', 'title' => '简介管理', 'display' => 1, 'level' => 1, 'image' => 'cog', 'mark' => '简介列表'], //63
-            ['pid' => 62, 'name' => 'foundation.profile.import', 'title' => '导入简介', 'display' => 1, 'level' => 2, 'image' => 'plus', 'mark' => '发布简介'], 
-            ['pid' => 62, 'name' => 'foundation.profile.detail', 'title' => '简介内容', 'display' => 0, 'level' => 2, 'image' => 'edit', 'mark' => '简介内容'],           
-            ['pid' => 62, 'name' => 'foundation.profile.update', 'title' => '修改简介', 'display' => 0, 'level' => 2, 'image' => 'edit', 'mark' => '修改简介'],
-            ['pid' => 62, 'name' => 'foundation.profile.delete', 'title' => '删除简介', 'display' => 0, 'level' => 2, 'image' => 'edit', 'mark' => '删除简介'],
+            ['pid' => 63, 'name' => 'foundation.profile.import', 'title' => '导入简介', 'display' => 1, 'level' => 2, 'image' => 'plus', 'mark' => '发布简介'], 
+            ['pid' => 63, 'name' => 'foundation.profile.detail', 'title' => '简介内容', 'display' => 0, 'level' => 2, 'image' => 'edit', 'mark' => '简介内容'],           
+            ['pid' => 63, 'name' => 'foundation.profile.update', 'title' => '修改简介', 'display' => 0, 'level' => 2, 'image' => 'edit', 'mark' => '修改简介'],
+            ['pid' => 63, 'name' => 'foundation.profile.delete', 'title' => '删除简介', 'display' => 0, 'level' => 2, 'image' => 'edit', 'mark' => '删除简介'],
 */
         ];
         foreach ($datas as $data) {
