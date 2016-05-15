@@ -177,8 +177,12 @@ Route::any('/news/create', ['uses' => 'NewsController@create', 'as' => 'news.cre
 Route::any('/news/index', ['uses' => 'NewsController@index', 'as' => 'news.index']);
 Route::any('/news/detail', ['uses' => 'NewsController@detail', 'as' => 'news.detail']);
 
+
 Route::get('/excel/export', ['uses' => 'ExcelController@export', 'as' => 'excel.export']);
 Route::get('/excel/import', ['uses' => 'ExcelController@import', 'as' => 'excel.import']);
 
 Route::get('/user/create',['uses'=>'UserController@create', 'as' => 'user.create']);
-Route::any('/', ['uses' => 'SchoolController@index', 'as' => 'school.list']);
+
+
+Route::any('/news/test', ['uses' => 'NewsController@test', 'as' => 'news.test']);
+

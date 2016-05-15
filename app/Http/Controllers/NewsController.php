@@ -28,6 +28,15 @@ class NewsController extends Controller
 
     public function create()
     {
+
         return view('news.create');
+
+    }
+
+    public function test(Request $request)
+    {
+     //   $form = $request->input();
+     //   dd($form);
+        dd($request->all());
     }
 }

@@ -38,6 +38,7 @@
     <script src="{{asset('style/admin/js/json.js')}}"></script>
     <script src="{{asset('style/admin/js/appUtils.js')}}"></script>
 
+
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <!-- Site wrapper -->
