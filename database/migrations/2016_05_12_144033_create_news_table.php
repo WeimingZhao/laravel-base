@@ -15,7 +15,7 @@ class CreateNewsTable extends Migration
         Schema::create('news', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title',64)->nullable()->comment('新闻标题');
-            $table->text('comtent')->comment('新闻内容');
+            $table->text('content')->comment('新闻内容');
             $table->integer('author_id')->comment('作者id');
             $table->integer('type')->default(1)->comment('新闻类型');
             $table->integer('target_id')->comment('新闻目标');
