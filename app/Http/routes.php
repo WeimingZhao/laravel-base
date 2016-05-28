@@ -170,19 +170,20 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['adm
 });
 
 Route::any('/wechat', 'Wechat\IndexController@serve');
-Route::get('/wechat/index/{token}/{timestamp}/{nonce}/', ['uses' => 'WeChat\IndexController@index', 'as' => 'wechat.index.index']);
-
+Route::any('/wechat/getToken', 'Wechat\IndexController@getToken');
+Route::any('/wechat/setBotton', 'Wechat\IndexController@setBotton');
+//Route::get('/wechat/index/{token}/{timestamp}/{nonce}/', ['uses' => 'WeChat\IndexController@index', 'as' => 'wechat.index.index']);
 
 Route::any('/news/create', ['uses' => 'NewsController@create', 'as' => 'news.create']);
 Route::any('/news/index', ['uses' => 'NewsController@index', 'as' => 'news.index']);
 Route::any('/news/detail', ['uses' => 'NewsController@detail', 'as' => 'news.detail']);
-
+Route::any('/news/test', ['uses' => 'NewsController@test', 'as' => 'news.test']);
 
 Route::get('/excel/export', ['uses' => 'ExcelController@export', 'as' => 'excel.export']);
 Route::get('/excel/import', ['uses' => 'ExcelController@import', 'as' => 'excel.import']);
 
 Route::get('/user/create',['uses'=>'UserController@create', 'as' => 'user.create']);
 
+Route::get('/score/my_score',['uses'=>'ScoreController@my_score', 'as' => 'score.my_score']);
 
-Route::any('/news/test', ['uses' => 'NewsController@test', 'as' => 'news.test']);
 

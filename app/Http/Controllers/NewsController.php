@@ -39,14 +39,15 @@ class NewsController extends Controller
             $data = $request->only(['title', 'type', 'content', 'target_id']);
             return $this->repository->create($data);
         }
+        return view('news/create');
     }
 
     public function detail(Request $request)
     {
         if ($request->method() == 'GET') {
             $id = $request->only(['id']);
-            $detail = News::where(Find($id));
-            print_r($detail);
+            $detail = News::find($id)->toArray();
+            return view('news/detail')->with(compact('detail'));
         }
     }
 

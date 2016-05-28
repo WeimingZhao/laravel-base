@@ -33,5 +33,6 @@ class Kernel extends HttpKernel
         'admin.acl' => \App\Http\Middleware\Admin\AclMiddleware::class,//后台权限
         'admin.log' => \App\Http\Middleware\Admin\LogMiddleware::class,//后台用户操作记录
         'file' => \App\Http\Middleware\File\FileMiddleware::class,//文件服务器验证
+        'wechat.oauth' => \Overtrue\LaravelWechat\Middleware\OAuthAuthenticate::class,//获取微信用户信息
     ];
 }

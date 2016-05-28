@@ -1,0 +1,78 @@
+.i-box{
+    width: 100%;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    padding: 20px 15px;
+    margin-top: 25px;
+    border: 1px solid #E5E6E7;
+}
+
+.i-box h3{
+    color: #222425;
+    line-height: 1.2em;
+}
+.i-box img{
+    width: 100%;
+    height: 150px;
+}
+.i-box p{
+    color: #9B9C9D;
+    line-height: 1.1em;
+    margin-top: 10px;
+}
+.i-box .date{
+    color: #9B9C9D;
+    margin:10px 0;
+}
+.i-alert{
+    padding: 100px 0;
+    width: 100%;
+    text-align: center;
+    color: #A4A5A6;
+}
+.pagination{
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    line-height: 40px;
+}
+.pagination a{
+    display: block;
+    float: left;
+    width: 45%;
+    height: 100%;
+    text-align: center;
+    color: #3F3F3F;
+    background: #ffffff;
+    border: 1px solid #E5E6E7;
+    box-sizing: border-box;
+}
+.pagination .prev{
+    margin-right: 10%;
+}
+
+.pagination .disabled{
+    color: #A4A5A6;
+}
+
+@media screen and (min-width: 600px){
+    .i-box img {
+        height: 220px;
+    }
+}
+.table caption{
+    text-align:center;
+    font-weight:bold;
+    font-size:1.7em;
+}
+.table-bordered{
+    border:2px solid #000000 !important;
+}
+.table tbody tr{
+    border:2px solid #000000 !important;
+}
+.table thead tr td{
+    border:2px solid #000000 !important;
+    font-size: 1.3em;
+    font-weight: bold;
+}

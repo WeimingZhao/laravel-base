@@ -8,7 +8,7 @@
 	# code...
  ?>
 
-            <a href="#">
+            <a href="/news/detail?id={{$value['id']}}">
                 <table class="doc-box">
                     <tr>
                         <td ><img src="/uploads/image/QR Code.jpg"></td>

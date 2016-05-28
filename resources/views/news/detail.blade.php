@@ -2,11 +2,20 @@
 
 
 @section('content')
+<?php  
 
-<div>我是文章标题</div>
-<div>我是发布时间</div>
-<div>我是修改时间</div>
-<div>我是作者</div>
-<div>我是内容</div>
 
+foreach ($detail as $key => $value) {
+	# code...
+
+
+ ?>
+ <div class = "title" style="text-align:center;font-size:1.5em;font-weight:bold;">{{$value['title']}}</div>
+ <div class = "date" style="text-align:center;font-size:1.5em;font-weight:bold;">{{$value['created_at']}}</div>
+ <div class = "context"><?php echo $value['content']; ?></div>
+<?php
+
+}
+
+?>
 @endsection

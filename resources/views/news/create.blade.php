@@ -8,7 +8,7 @@
         <div class="box-title">发布新闻</div>
     </div>
 
-    <form action="/news/test" method="post">
+    <form action="/news/create" method="post">
     <table class="table table-responsive table-striped">        
         <tr>
             <td class="col-sm-2">标题：</td>

@@ -10,8 +10,8 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="{{asset('plugins/font-awesome/css/font-awesome.min.css')}}">
     <!-- Theme style -->
-    <link rel="stylesheet" href="{{asset('style/home/css/wechat.css')}}">
-    <link href="http://121.40.100.77:8090/css/list.css" rel="stylesheet">
+    <link  rel="stylesheet" href="{{asset('style/home/css/wechat.css')}}">
+    <link  rel="stylesheet" href="{{asset('style/home/css/list.css')}}" >
     <!-- edit for wechat -->
     <script src="http://121.40.100.77:8090/js/jquery.min.js"></script>
     <script src="http://121.40.100.77:8090/js/jquery.imgautosize.js"></script>
